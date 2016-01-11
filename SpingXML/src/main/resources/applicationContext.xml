@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name="customerRepo" class="com.springPractise.repository.RepositoryImpl" />
+	
+	<bean name="customerService" class="com.springPractise.service.CustormerServiceImpl" autowire="constructor"> 
+	<!-- <bean name="customerService" class="com.springPractise.service.CustormerServiceImpl" autowire="byType | byName"> -->
+		<!-- <constructor-arg name="sample" value="Value11111" />
+		<constructor-arg name="repo" ref="customerRepo" /> -->
+		<!-- <property name="setterMethod" ref="customerRepo"></property> -->
+	</bean>
+
+</beans>
